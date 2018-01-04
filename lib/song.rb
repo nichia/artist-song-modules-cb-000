@@ -6,8 +6,8 @@ class Song
   include Paramable::InstanceMethods
   include Memorable::InstanceMethods
 
-  attr_accessor :name
-  attr_reader :artist
+  attr_accessor :name, :artist
+  #attr_reader :artist
 
   @@songs = []
 
@@ -19,9 +19,9 @@ class Song
   #  @@songs.detect{|a| a.name == name}
   #end
 
-  def artist=(artist)
-    @artist = artist
-  end
+  #def artist=(artist)
+  #  @artist = artist
+  #end
 
   #def to_param
   #  name.downcase.gsub(' ', '-')
